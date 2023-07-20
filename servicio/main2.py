@@ -5,10 +5,10 @@
 
 from dominio.docente import Docente
 from dominio.estudiante import Estudiante
-from dominio.libro import Libro
-from dominio.revista import Revista
-from dominio.pedido import Pedido
-
+#from libro import Libro
+#from dominio.revista import Revista
+#from dominio.pedido import Pedido
+from dominio.material import Material
 
 
 d1 = Docente(cedula='0900000080', nombre='DANIELA', apellido='COBOS', email='DANICOBO@gmail.com',
@@ -41,10 +41,10 @@ e4 = Estudiante(cedula='0952308245', nombre='jamilet', apellido='pillasagua', em
 # print(e4)
 
 
-libro9 = Libro(codigo='20', autor='Mercedes Ron', titulo='CULPA NUESTRA', anio=2018, editorial='MONTENA', disponible=True, cantidad_disponible=40,tipo_pasta='NORMAL')
+#libro9 = Libro(codigo='20', autor='Mercedes Ron', titulo='CULPA NUESTRA', anio=2018, editorial='MONTENA', disponible=True, cantidad_disponible=40,tipo_pasta='NORMAL')
 # print(libro9)
 
-revista10 = Revista(codigo='300', autor='MATIAS', titulo='AUTO', anio=2010, editorial='MAZDA', disponible=True, cantidad_disponible=60,tipo='DIGITAL')
+#revista10 = Revista(codigo='300', autor='MATIAS', titulo='AUTO', anio=2010, editorial='MAZDA', disponible=True, cantidad_disponible=60,tipo='DIGITAL')
 # print(revista10)
 
 
@@ -52,14 +52,14 @@ revista10 = Revista(codigo='300', autor='MATIAS', titulo='AUTO', anio=2010, edit
 # pedido = Pedido(solicitante='joseph paez', lista_material='Compra domicilio',
 #                  fecha_prestamo='20/junio/2023', fecha_devolucion='28/Junio/2023')
 
-materiales = list()
-materiales.append(libro9)
-materiales.append(revista10)
+#materiales = list()
+#materiales.append(libro9)
+#materiales.append(revista10)
 # print(materiales)
-pedido1 = Pedido(solicitante = d1, lista_materiales = materiales, fecha_prestamo='20/junio/2023', fecha_devolucion='28/Junio/2023')
+#pedido1 = Pedido(solicitante = d1, lista_materiales = materiales, fecha_prestamo='20/junio/2023', fecha_devolucion='28/Junio/2023')
 # pedido1.mostrar_solicitante()
 # pedido1.mostrar_materiales()
-pedido1.mostrar_pedido()
+#pedido1.mostrar_pedido()
 # print(pedido)
 # print('Solicitante:')
 # name_parts = pedido.solicitante.split()
